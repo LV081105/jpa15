@@ -1,5 +1,7 @@
 package ejemplo.logica;
 
+import java.util.List;
+
 import ejemplo.persistencia.ControladoraPersistencia;
 
 public class ControladoraLogica {
@@ -58,6 +60,24 @@ public class ControladoraLogica {
 		// Si pasa todas las validaciones, se guarda en la base de datos
 		//controlPersis.crearCancion(can);
 		controlPersis.crearCancion(can);
+	}
+	
+	// BUSCAR UN ARTISTA por su id
+	public Artista buscarUnArtista(int id) {
+	return controlPersis.buscarArtista(id);
+	}
+	// LISTAR TODOS LOS ARTISTAS
+	public List<Artista> listarArtistas() {
+	return controlPersis.buscarTodosLosArtistas();
+	}
+	
+	// BUSCAR UN cancion por su id
+	public Cancion buscarUnaCancion(int id) {
+	return controlPersis.buscarCancion(id);
+	}
+	// LISTAR TODOS LOS cancion
+	public List<Cancion> listarCanciones() {
+	return controlPersis.buscarTodasLasCanciones();
 	}
 }
 

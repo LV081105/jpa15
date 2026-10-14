@@ -1,5 +1,7 @@
 package ejemplo.persistencia;
 
+import java.util.List;
+
 import ejemplo.logica.Artista;
 import ejemplo.logica.Cancion;
 
@@ -22,6 +24,24 @@ public class ControladoraPersistencia {
 		cancionJpa.crear(cancion);
 	}
 // AL IGUAL QUE CON ARTISTA, GENERAR EL MÉTODO “crearCancion()”
+	
+	// BUSCAR UN ARTISTA
+	public Artista buscarArtista(int id) {
+	return artistaJpa.buscarUno(id);
+	}
+	// BUSCAR TODOS LOS ARTISTAS
+	public List<Artista> buscarTodosLosArtistas() {
+	return artistaJpa.buscarTodos();
+	}
+	
+	// BUSCAR UN Cancion
+	public Cancion buscarCancion(int id) {
+	return cancionJpa.buscarUno(id);
+	}
+	// BUSCAR TODOS LOS Cancion
+	public List<Cancion> buscarTodasLasCanciones() {
+	return cancionJpa.buscarTodos();
+	}
 }
 
 

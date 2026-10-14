@@ -60,6 +60,12 @@ public class Artista implements Serializable {
  // NUEVOS: Getters y Setters para fechaNacimiento
     public Date getFechaNacimiento() { return fechaNacimiento; }
     public void setFechaNacimiento(Date fechaNacimiento) { this.fechaNacimiento = fechaNacimiento; }
+
+	@Override
+	public String toString() {
+		return "ARTISTA: \n" + "ID: " + getId() + "\nNombre: " + getNombre() + "\nGenero musical: " + getGeneroMusical()
+				+ "\nNacionalidad: " + getNacionalidad() + "\nEdad: " + getEdad();
+	}
 }
 
 

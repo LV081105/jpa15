@@ -1,5 +1,7 @@
 package ejemplo.persistencia;
 
+import java.util.List;
+
 import ejemplo.logica.Cancion;
 
 import jakarta.persistence.EntityManager;
@@ -46,5 +48,28 @@ public class CancionJpaController {
 				em.close();
 			}
 		}
+	}
+	
+	// BUSCAR UNO: busca un artista por su id.
+	// No hace falta transacción porque no modifica nada en la base.
+	public Cancion buscarUno(int id) {
+	EntityManager em = getEntityManager();
+	try {
+	// find busca por clave primaria. Si no existe, devuelve null.
+	return em.find(Cancion.class, id);
+	} finally {
+	em.close();
+	}
+	}
+	// BUSCAR TODOS: devuelve una lista con todos los artistas.
+	public List<Cancion> buscarTodos() {
+	EntityManager em = getEntityManager();
+	try {
+	// Consulta JPQL: "traeme todos los objetos Artista"
+	return em.createQuery("SELECT a FROM Cancion a", Cancion.class)
+	.getResultList();
+	} finally {
+	em.close();
+	}
 	}
 }
