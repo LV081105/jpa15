@@ -5,9 +5,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
-import ejemplo.logica.Artista;
-import ejemplo.logica.Cancion;
-import ejemplo.logica.ControladoraLogica;
+import com.app.logica.Artista;
+import com.app.logica.Cancion;
+import com.app.logica.ControladoraLogica;
 
 public class Main {
 	public static void main(String[] args) {

@@ -1,0 +1,18 @@
+info:
+  name: Alta artista
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/jpa-ejemplo/SvArtistaCrear.
+  body:
+    type: form-urlencoded
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

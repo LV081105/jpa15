@@ -1,0 +1,22 @@
+{
+  "certs": [
+    {
+      "role": "leaf",
+      "subjectCN": "*.usebruno.com",
+      "issuerCN": "Sectigo Public Server Authentication CA DV R36",
+      "fingerprint": "0B:60:7C:53:9C:D5:77:7A:03:0A:3A:DA:DD:E1:C3:F9:1E:53:2B:1C:F4:9A:3B:41:5A:FD:ED:D8:7D:F8:B1:1B",
+      "hash": "C2B8U5zVd3oDCjra3eHD+R5TKxz0mjtBWv3t2H34sRs=",
+      "validFrom": "Dec 22 00:00:00 2025 GMT",
+      "validTo": "Jan 21 23:59:59 2027 GMT"
+    },
+    {
+      "role": "intermediate",
+      "subjectCN": "Sectigo Public Server Authentication CA DV R36",
+      "issuerCN": "Sectigo Public Server Authentication Root R46",
+      "fingerprint": "8C:54:C3:34:B6:6B:A4:E4:26:77:2A:F4:A3:F9:13:6C:19:A1:AE:C7:29:FD:B2:8C:53:5C:07:A5:A4:EF:22:E0",
+      "hash": "jFTDNLZrpOQmdyr0o/kTbBmhrscp/bKMU1wHpaTvIuA=",
+      "validFrom": "Mar 22 00:00:00 2021 GMT",
+      "validTo": "Mar 21 23:59:59 2036 GMT"
+    }
+  ]
+}

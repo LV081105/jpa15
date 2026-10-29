@@ -10,8 +10,23 @@
     <groupId>com.ejemplo</groupId>
     <artifactId>jpa-ejemplo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <!-- a) Cambiamos el empaquetado a aplicación web -->
+    <packaging>war</packaging>
+
+    <!-- b) Configuramos la versión de Java a 17 -->
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
 
     <dependencies>
+
+        <!-- c) Agregamos la dependencia de Servlets para Tomcat -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.hibernate.orm</groupId>
