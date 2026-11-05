@@ -5,9 +5,18 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/jpa-ejemplo/SvArtistaCrear.
+  url: http://localhost:8080/jpa-ejemplo/SvArtistaCrear
   body:
     type: form-urlencoded
+    data:
+      - name: nombre
+        value: ""
+      - name: generoMusical
+        value: ""
+      - name: nacionalidad
+        value: ""
+      - name: edad
+        value: ""
   auth: inherit
 
 settings:
